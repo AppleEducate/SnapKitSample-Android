@@ -15,10 +15,10 @@
         android:theme="@style/AppTheme">
         <meta-data
             android:name="com.snapchat.kit.sdk.clientId"
-            android:value="<your app’s client id>" />
+            android:value="2b9d6403-139d-45a5-8f75-8392d4041c03" />
         <meta-data
             android:name="com.snapchat.kit.sdk.redirectUrl"
-            android:value="blackchat://login" />
+            android:value="snapauth://redirect" />
         <meta-data
             android:name="com.snapchat.kit.sdk.scopes"
             android:resource="@array/snap_connect_scopes" />
@@ -30,8 +30,8 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
                 <data
-                    android:host="login"
-                    android:scheme="blackchat" />
+                    android:host="redirect"
+                    android:scheme="snapauth" />
             </intent-filter>
 
         </activity>
